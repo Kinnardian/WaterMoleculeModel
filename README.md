@@ -17,16 +17,19 @@ My water model is composed of three particles, one oxygen and two hydrogens and 
 The force of each spring is given by a Hook’s Law: . The spring constants of the springs were derived from their respective angular frequencies of oscillation, which were available from experimentation and from this semesters lecture notes, using the relation .  This model allows for intramolecular behavior such as bond length and angle oscillation to be understood but it does not account for intermolecular interactions.
 
 Coulumb Model
+==
 In order to model interatomic interactions, the particles of water were given partial charges which sum to 0 (arbitrarily, δO=-.8, δH=+.4) and the force due to these charges was modeled using Coulumb’s Law:  rather than springs. This model accounts for attractive forces between differently charged particles, and repulsive forces between similarly charged particles but it does not account for restoring forces in each case.
 In order to account for both the attractive and repulsive forces between particles, I extended my model to include forces of temporary intratomic shifts in charge distribution know as dipole moments known as Van der Waals forces using the Lennard Jones Potential:. This model was developed by John Lennard-Jones in the 1920’s at Cambridge. It is widely used because of its analytical and computational simplicity. 
 
 
 Results
+===
 The spring model starts off fine except that if run long enough, the oscillations of the O-H bond length grow and do so in such a way that indicates my spring water model is inaccurate as a model for nature. This may be a product of cumulative rounding error rather than modeling error and can be corrected for by using a smaller time step.
 Graph of O-H bond length in Hook Model oscillating out of control.
 The Coulomb model seems to pull in the hydrogens, as if in a pinball machine only for them to be shot away. This makes sense because of the absence of a restorative force. 
 
 Falling in . . .
   Flying away!
+===
 
 The final model, using the Lennard-Jones Potential seems to be the best, as it displays neither the instability of the Coulumb model or the eventual decay of the spring model. I had hoped to also include a model involving an ionic interaction but this hope was snuffed out by the pernicious n-body problem.
