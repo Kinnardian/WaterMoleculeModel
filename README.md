@@ -4,11 +4,15 @@ WaterMoleculeModel
 This is a collection of three different models of a water molecule in Python.
 
 Models of Molecular Motions
+=====
 Of all the fundamental forces governing our world, those that govern intramolecular and intermolecular interaction are perhaps the most pervasive. They appear as the force of magnets, and the electronics which depend on them, but also as the magnetosphere of the Earth and the beautiful aurora it produces. They apars as the forces that governs chemical interactions. All of these forces are actually all incarnations of the electrostatic force. Curiously, it is the force which governs springs on the macroscopic level and chemical bonds on the nanoscopic level. This curious coincidence of physical phenomena is one of great consequence for it allows us to simply yet elegantly describe the mechanics of molecules and glean much other understanding from the Universe. In this paper I will model interparticle interactions using three different but related vPython set-ups. 
+
 Models
+====
 In the interest of computational parsimony, the elegance of the model, and my own sanity several assumptions have been made. Some will be shed as we progress through the models. Atoms are treated as massive, sometimes charged point particles represented by spheres. This contrasts with the currently understood reality explained by quantum physics, not only in complexity but also in computability. Bonds are modeled variously using springs, the coulumb force, and the Lennard-Jones Potential.
 I chose to model water because of its simplicity, its pervasiveness, and it centrality to human experience and also because of its role as a solvent in easily(or so I thought) modeled ionic interactions. 
 Hooke Model
+===
 My water model is composed of three particles, one oxygen and two hydrogens and three springs. The hydrogens are attached to the oxygens by springs with 95.84pm as the equilibrium length, as this is the equilibrium length of the O-H bond in water.  There is a third imaginary spring, which does not represent a bond running from Hydrogen to Hydrogen. This spring, I believe, accounts for the lone pairs on oxygen which give water its bond angle, but which would not appear in a model treating atoms as point particles. 
 The force of each spring is given by a Hook’s Law: . The spring constants of the springs were derived from their respective angular frequencies of oscillation, which were available from experimentation and from this semesters lecture notes, using the relation .  This model allows for intramolecular behavior such as bond length and angle oscillation to be understood but it does not account for intermolecular interactions.
 
