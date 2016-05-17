@@ -19,7 +19,11 @@ The force of each spring is given by a Hook’s Law: . The spring constants of t
 Coulumb Model
 ==
 In order to model interatomic interactions, the particles of water were given partial charges which sum to 0 (arbitrarily, δO=-.8, δH=+.4) and the force due to these charges was modeled using Coulumb’s Law:  rather than springs. This model accounts for attractive forces between differently charged particles, and repulsive forces between similarly charged particles but it does not account for restoring forces in each case.
-In order to account for both the attractive and repulsive forces between particles, I extended my model to include forces of temporary intratomic shifts in charge distribution know as dipole moments known as Van der Waals forces using the Lennard Jones Potential:. This model was developed by John Lennard-Jones in the 1920’s at Cambridge. It is widely used because of its analytical and computational simplicity. 
+In order to account for both the attractive and repulsive forces between particles, I extended my model to include forces of temporary intratomic shifts in charge distribution know as dipole moments.
+
+Lennard Jones Potential
+===
+This model was developed by John Lennard-Jones in the 1920’s at Cambridge. It is widely used because of its analytical and computational simplicity.  It accounts for longer-range effect due to what are known as Van der Waals forces
 
 
 Results
